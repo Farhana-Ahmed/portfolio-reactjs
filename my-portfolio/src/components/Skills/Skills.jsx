@@ -135,7 +135,7 @@ export default Skills;
 const Container = styled.div`
   width: 100%;
   max-width: 1280px;
-  margin-bottom: 0px;
+  margin-top: 0px;
   padding: 3rem 0;
   /* display: flex; */
   /* Change to column for small screens */
@@ -144,6 +144,7 @@ const Container = styled.div`
   h1 {
     font-size: 1.9rem;
     margin-bottom: 0px;
+    text-align: center;
   }
 `;
 

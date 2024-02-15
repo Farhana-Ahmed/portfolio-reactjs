@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       </Banner>
       <ContainerLight>
         <Skills />
+      </ContainerLight>
+      <ContainerLight>
+        <Projects />
       </ContainerLight>
     </Container>
   );
@@ -24,6 +28,7 @@ const Banner = styled.div`
   background: linear-gradient()
     (159deg, rgb(45, 45, 58) 0%, rgb(45, 43, 53) 100%);
   height: 100vh;
+
   @media (max-width: 640px) {
     height: 100%;
     padding-bottom: 1rem;
@@ -31,7 +36,8 @@ const Banner = styled.div`
 `;
 
 const ContainerLight = styled.div`
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
+  margin-top: -50px;
   background: linear-gradient()
     (159deg, rgb(45, 45, 58) 0%, rgb(45, 43, 53) 100%);
 `;
