@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
         <Header />
         <About />
       </Banner>
+      <ContainerLight>
+        <Skills />
+      </ContainerLight>
     </Container>
   );
 }
@@ -24,4 +28,10 @@ const Banner = styled.div`
     height: 100%;
     padding-bottom: 1rem;
   }
+`;
+
+const ContainerLight = styled.div`
+  margin-bottom: 0px;
+  background: linear-gradient()
+    (159deg, rgb(45, 45, 58) 0%, rgb(45, 43, 53) 100%);
 `;

@@ -18,8 +18,8 @@ const About = () => {
       </Text>
       <Details>
         <ul>
-          <li className="green">
-            <strong>Name:</strong> Farhana
+          <li>
+            <strong className="green">Name:</strong> <span>Farhana</span>
           </li>
           <li>
             <strong>Email:</strong> farhana.khashiya@gmail.com
