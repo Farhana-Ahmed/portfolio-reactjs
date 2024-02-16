@@ -22,7 +22,7 @@ const Skills = () => {
         height="80"
       />
       <img
-        src="/icons/express.svg"
+        src="/icons/express.jpeg"
         title="React"
         alt="React"
         width="80"
@@ -58,7 +58,7 @@ const Skills = () => {
         height="80"
       />
       <img
-        src="/icons/mongodb.svg"
+        src="/icons/mongo.svg"
         title="React"
         alt="React"
         width="80"
@@ -71,13 +71,13 @@ const Skills = () => {
         width="80"
         height="80"
       />
-      <img
+      {/* <img
         src="/icons/nodejs.svg"
         title="React"
         alt="React"
         width="80"
         height="80"
-      />
+      /> */}
       <img
         src="/icons/postgresql.svg"
         title="React"
