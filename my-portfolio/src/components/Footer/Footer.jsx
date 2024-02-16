@@ -2,41 +2,59 @@ import React from "react";
 import styled from "styled-components";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
+import { Slide, Zoom } from "react-awesome-reveal";
 const Footer = () => {
   return (
-    <Container>
+    <Container id="contact">
       <ContactInfo>
-        <h1>Contact Info</h1>
+        <Slide direction="left" delay={1}>
+          <h1>Contact Info</h1>
+        </Slide>
         <div className="address">
-          <h1>Address: </h1>
-          <p>Rosmertastraat,3,1363XV,Almere</p>
+          <Slide direction="left">
+            <h1>Address: </h1>
+          </Slide>
+          <Slide direction="left">
+            <p>Rosmertastraat,3,1363XV,Almere</p>
+          </Slide>
         </div>
         <div className="links">
-          <h1>Email:</h1>
+          <Slide direction="left">
+            <h1>Email:</h1>
+          </Slide>
 
           <div>
-            <span>
-              <HiOutlineMailOpen />
-            </span>
-            <a href="mailto:farhana.khashiya@gmail.com">
-              farhana.khashiya@gmail.com
-            </a>
+            <Slide direction="left">
+              <span>
+                <HiOutlineMailOpen />
+              </span>
+            </Slide>
+            <Slide direction="left">
+              <a href="mailto:farhana.khashiya@gmail.com">
+                farhana.khashiya@gmail.com
+              </a>
+            </Slide>
           </div>
         </div>
         <div className="socialprofiles">
-          <h1>Check out my</h1>
+          <Slide direction="left">
+            <h1>Check out my</h1>
+          </Slide>
           <div className="icons">
-            <span>
-              <a href="/">
-                <AiFillGithub />
-              </a>
-            </span>
-            <span>
-              <a href="/">
-                <AiFillLinkedin />
-              </a>
-            </span>
+            <Zoom>
+              <span>
+                <a href="https://github.com/Farhana-Ahmed">
+                  <AiFillGithub />
+                </a>
+              </span>
+            </Zoom>
+            <Zoom>
+              <span>
+                <a href="https://www.linkedin.com/in/farhanakhashiya/">
+                  <AiFillLinkedin />
+                </a>
+              </span>
+            </Zoom>
           </div>
         </div>
       </ContactInfo>
@@ -119,7 +137,7 @@ const ContactInfo = styled.div`
         border-radius: 50px;
 
         &:hover {
-          background: #fff;
+          background: rgb(188, 100, 100);
         }
 
         a {

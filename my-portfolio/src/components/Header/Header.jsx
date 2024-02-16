@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Container hamburger={hamburger}>
       <Logo>
-        <img src={profilepic} alt="" />
+        <img src={profilepic} alt="profilepic" />
         <h1>Portfolio</h1>
       </Logo>
       <Navbar hamburger={hamburger}>
@@ -14,13 +14,13 @@ const Header = () => {
           <a href="#home">Home</a>
         </span>
         <span>
-          <a href="#home">Skills</a>
+          <a href="#skills">Skills</a>
         </span>
         <span>
-          <a href="#home">Projects</a>
+          <a href="#projects">Projects</a>
         </span>
         <span>
-          <a href="#home">Contact</a>
+          <a href="#contact">Contact</a>
         </span>
       </Navbar>
       <div className="menu" onClick={() => setHamburger(!hamburger)}>
@@ -40,6 +40,7 @@ const Container = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 1.5rem 0;
+  padding-top: 50px;
   @media (max-width: 768px) {
     width: 90%;
   }

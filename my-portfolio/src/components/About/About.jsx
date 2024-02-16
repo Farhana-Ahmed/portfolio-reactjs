@@ -36,11 +36,14 @@ const About = () => {
 export default About;
 
 const Container = styled.div`
+  margin-left: 50px;
   display: flex;
   gap: 2rem;
   padding-top: 3rem;
   width: 80%;
   max-width: 1280px;
+  margin: 0 auto;
+
   @media (max-width: 840px) {
     width: 90%;
   }
@@ -89,12 +92,6 @@ const Details = styled.div`
   margin: auto;
   padding: 0 10px;
   text-align: center;
-  /* h1{
-    font-size: 2rem;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-} */
 
   ul {
     list-style: none;
@@ -103,7 +100,20 @@ const Details = styled.div`
   }
   li {
     margin-bottom: 10px;
-    /* padding-bottom: 5px; */
     border-bottom: 2px solid #333;
+  }
+
+  @media (max-width: 840px) {
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px 0;
+
+      &:not(:lastchild) {
+        border-bottom: 2px solid #333;
+      }
+    }
   }
 `;
