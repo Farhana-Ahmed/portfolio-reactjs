@@ -14,9 +14,7 @@ function App() {
       <ContainerLight>
         <Skills />
       </ContainerLight>
-      <ContainerLight>
-        <Projects />
-      </ContainerLight>
+      <Projects />
     </Container>
   );
 }

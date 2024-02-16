@@ -27,6 +27,7 @@ const Skills = () => {
         alt="React"
         width="80"
         height="80"
+        background-color="white"
       />
       <img
         src="/icons/figma.svg"
@@ -149,6 +150,8 @@ const Container = styled.div`
 `;
 
 const IconContainer = styled.div`
+  margin-top: 10px;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
 `;
