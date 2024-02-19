@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { IoCodeWorkingOutline } from "react-icons/io5";
+// import { IoCodeWorkingOutline } from "react-icons/io5";
+
 import Card from "./Card";
 
 const Projects = () => {
@@ -11,36 +12,41 @@ const Projects = () => {
           <h1 className="green">Projects</h1>
           <Cards>
             <Card
-              Icon={IoCodeWorkingOutline}
-              title={"Project1"}
+              // Icon={IoCodeWorkingOutline}
+              image="/icons/recipe.svg"
+              title={"RecipeApp"}
               desc={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchangedn"
               }
             />
             <Card
-              Icon={IoCodeWorkingOutline}
-              title={"Project2"}
+              // Icon={IoCodeWorkingOutline}
+              image="/icons/pokeball.svg"
+              title={"Pokemoniacs"}
               desc={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchangedn"
               }
             />
             <Card
-              Icon={IoCodeWorkingOutline}
-              title={"Project3"}
+              // Icon={IoCodeWorkingOutline}
+              image="/icons/milk.svg"
+              title={"MilkApp"}
               desc={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
               }
             />
             <Card
-              Icon={IoCodeWorkingOutline}
-              title={"Project3"}
+              // Icon={IoCodeWorkingOutline}
+              image="/icons/blog.svg"
+              title={"TinyBlog"}
               desc={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
               }
             />{" "}
             <Card
-              Icon={IoCodeWorkingOutline}
-              title={"Project3"}
+              // Icon={IoCodeWorkingOutline}
+              image="/icons/portfolio.svg"
+              title={"Portfolio"}
               desc={
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged"
               }

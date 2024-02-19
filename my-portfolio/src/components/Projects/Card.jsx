@@ -2,13 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = (props) => {
-  const { Icon, desc, title } = props;
+  const { desc, title, image } = props;
   return (
     <div>
       <Container>
-        <span className="green">
+        {/* <span className="green">
           <Icon />
-        </span>
+        </span> */}
+        <img src={image} alt="" />
         <h1>{title}</h1>
         <p>{desc}</p>
       </Container>
@@ -31,5 +32,8 @@ const Container = styled.div`
   }
   p {
     font-size: 0%.8rem;
+  }
+  img {
+    width: 50%;
   }
 `;
